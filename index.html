@@ -147,11 +147,15 @@
         <h2>Tell us what your business does. We’ll show you what ManageUs could handle.</h2>
         <p>No pressure. No confusing tech talk. Just a simple demo built around your business.</p>
       </div>
-      <form class="contact-form" action="mailto:hello@manageus.co.nz" method="post" enctype="text/plain">
-        <label>Your name<input name="name" type="text" placeholder="Your name" /></label>
-        <label>Business type<input name="business" type="text" placeholder="Plumbing, salon, clinic, accounting, etc." /></label>
-        <label>Email<input name="email" type="email" placeholder="you@business.co.nz" /></label>
-        <label>What do you want help with?<textarea name="message" placeholder="Replying to enquiries, booking jobs, follow-ups, reviews..."></textarea></label>
+      <form class="contact-form" action="https://formsubmit.co/manageusinfo@gmail.com" method="POST">
+        <input type="hidden" name="_subject" value="New ManageUs demo enquiry" />
+        <input type="hidden" name="_template" value="table" />
+        <input type="hidden" name="_captcha" value="false" />
+        <input type="hidden" name="_next" value="thanks.html" />
+        <label>Your name<input name="name" type="text" placeholder="Your name" required /></label>
+        <label>Business type<input name="business" type="text" placeholder="Plumbing, salon, clinic, accounting, etc." required /></label>
+        <label>Email<input name="email" type="email" placeholder="you@business.co.nz" required /></label>
+        <label>What do you want help with?<textarea name="message" placeholder="Replying to enquiries, booking jobs, follow-ups, reviews..." required></textarea></label>
         <button type="submit">Request free demo</button>
       </form>
     </section>
